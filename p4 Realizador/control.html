@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>PRÁCTICA 4 Control Realizacion</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style media="screen">
+
+       #ReprodPrincipal{
+         text-align: center;
+         width: 520;
+         height: 320;
+       }
+
+       #ReprodSecundarios{
+         text-align: left;
+         width: 120;
+         height: 60;
+       }
+
+       #ReprodSecundarios2{
+         text-align: left;
+         width: 120;
+         height: 60;
+       }
+
+       #ReprodTerciarios{
+         text-align: left;
+         width: 120;
+         height: 60;
+       }
+
+       #ReprodCuartos{
+         text-align: left;
+         width: 120;
+         height: 60;
+       }
+       p.outset {border-style: outset; background-color: green;}
+       div {
+         background-color: lightgrey;
+         width: 520px;
+         height: 320px;
+         border: 25px solid green;
+         padding: 25px;
+         margin: 25px;
+       }
+     </style>
+   </head>
+   <body>
+
+
+     <script>
+     function escuchar(){
+         var x = document.getElementById("ReprodPrincipal");
+         x.muted = false;
+     }
+
+     function silenciar(){
+         var x = document.getElementById("ReprodPrincipal");
+         x.muted = true;
+     }
+
+     function escuchar2(){
+         var x = document.getElementById("ReprodSecundarios");
+         x.muted = false;
+     }
+
+     function silenciar2(){
+         var x = document.getElementById("ReprodSecundarios");
+         x.muted = true;
+     }
+
+     function escuchar3(){
+         var x = document.getElementById("ReprodSecundarios2");
+         x.muted = false;
+     }
+
+     function silenciar3(){
+         var x = document.getElementById("ReprodSecundarios2");
+         x.muted = true;
+     }
+
+     function escuchar4(){
+         var x = document.getElementById("ReprodCuartos");
+         x.muted = false;
+     }
+
+     function silenciar4(){
+         var x = document.getElementById("ReprodCuartos");
+         x.muted = true;
+     }
+     </script>
+     <h1>Control Realización</h1>
+     <h2>Directo Concierto Madrid</h2>
+     <div><video id="ReprodPrincipal" autoplay loop controls muted>
+       <source id="mp4_src" src="cam1.mp4" type="video/mp4">
+       <source id="ogg_src" src="cam1.ogg" type="video/ogg">
+       Your browser does not support HTML5 video.
+     </video></div>
+     <p class="outset">ON LINE</p>
+
+
+     <!-- VIDEO 1 -->
+
+
+     <script>
+       function CambioVideo()  {
+           var retomar = 0.0;
+           var x = document.getElementById("ReprodSecundarios");
+           var z = document.getElementById("ReprodPrincipal");
+           document.getElementById("mp4_src").src = "cam2.mp4";
+           document.getElementById("ogg_src").src = "cam2.ogg";
+           document.getElementById("ReprodPrincipal").load();
+           retomar = x.currentTime;
+           z.currentTime = retomar;
+       }
+     </script>
+
+
+     <button onclick="CambioVideo()" onmouseover="escuchar2()" onmouseout="silenciar2()">
+       <video id="ReprodSecundarios" autoplay loop muted>
+         <source id="mp4_src" src="cam2.mp4" type="video/mp4">
+         <source id="ogg_src" src="cam2.ogg" type="video/ogg">
+         Your browser does not support HTML5 video.
+       </video>
+      <h3>cam1</h3>
+
+     </button>
+
+
+     <!-- VIDEO 2 -->
+
+
+     <script>
+       function CambioVideo2()  {
+         var retomar = 0.0;
+         var x = document.getElementById("ReprodSecundarios2");
+         var z = document.getElementById("ReprodPrincipal");
+         document.getElementById("mp4_src").src = "cam1.mp4";
+         document.getElementById("ogg_src").src = "cam1.ogg";
+         document.getElementById("ReprodPrincipal").load();
+         retomar = x.currentTime;
+         z.currentTime = retomar;
+       }
+     </script>
+
+
+     <button onclick="CambioVideo2()" onmouseover="escuchar()" onmouseout="silenciar()">
+       <video id="ReprodSecundarios2" autoplay loop muted>
+         <source id="mp4_src" src="cam1.mp4" type="video/mp4">
+         <source id="ogg_src" src="cam1.ogg" type="video/ogg">
+         Your browser does not support HTML5 video.
+       </video>
+      <h3>cam2</h3>
+     </button>
+
+
+
+     <!-- VIDEO 3 -->
+
+     <script>
+       function CambioVideo3()  {
+         var retomar = 0.0;
+         var x = document.getElementById("ReprodSecundarios2");
+         var z = document.getElementById("ReprodPrincipal");
+         document.getElementById("mp4_src").src = "cam3.mp4";
+         document.getElementById("ogg_src").src = "cam3.ogg";
+         document.getElementById("ReprodPrincipal").load();
+         retomar = x.currentTime;
+         z.currentTime = retomar;
+       }
+     </script>
+
+
+     <button onclick="CambioVideo3()" onmouseover="escuchar()" onmouseout="silenciar()">
+       <video id="ReprodSecundarios" autoplay loop muted>
+         <source id="mp4_src" src="cam3.mp4" type="video/mp4">
+         <source id="ogg_src" src="cam3.ogg" type="video/ogg">
+         Your browser does not support HTML5 video.
+       </video>
+      <h3>cam3</h3>
+    </button>
+
+    <!-- VIDEO 4 -->
+
+
+    <script>
+      function CambioVideo4()  {
+        var retomar = 0.0;
+        var x = document.getElementById("ReprodCuartos");
+        var z = document.getElementById("ReprodPrincipal");
+        document.getElementById("mp4_src").src = "cam4.mp4";
+        document.getElementById("ogg_src").src = "cam4.ogg";
+        document.getElementById("ReprodPrincipal").load();
+        retomar = x.currentTime;
+        z.currentTime = retomar;
+      }
+    </script>
+
+
+    <button onclick="CambioVideo4()" onmouseover="escuchar()" onmouseout="silenciar()">
+      <video id="ReprodCuartos" autoplay loop muted>
+        <source id="mp4_src" src="cam4.mp4" type="video/mp4">
+        <source id="ogg_src" src="cam4.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
+      <h3>cam4</h3>
+    </button>
+
+   </body>
+ </html>

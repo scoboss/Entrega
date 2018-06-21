@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PRÁCTICA 1 CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="background-color: LightCyan">
+    <style>
+    /*Cuadro CV completo*/
+    div.container {
+        width: 100%;
+        border: 1px solid gray;
+        background-image: url('fotofondo.jpg');
+    }
+
+    header, footer {
+        font-style: italic;
+        padding: 1em;
+        color: black;
+        background-color:white ;
+        clear: left;
+        text-align: center;
+    }
+
+/*Foto perfil */
+    nav {
+        float: left;
+        max-width: 160px;
+        margin: 0;
+        padding: 1em;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 10;
+    }
+
+    nav ul a {
+        text-decoration: none;
+    }
+
+    article {
+        margin-left: 170px;
+        border-left: 1px solid gray;
+        padding: 1em;
+        overflow: hidden;
+    }
+    .titulo {
+        color: blue;
+        padding: 1px;
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        background-color: white;
+    }
+
+    td, th {
+        border: 1px solid;
+        text-align: center;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: none;
+    }
+    </style>
+    </head>
+    <body>
+
+    <div class="container">
+
+    <header>
+      <h1 style="font-size:60px;">Curriculum Vitae</h1>
+    </header>
+
+    <nav>
+      <ul>
+
+        <img src="fotoperfil.jpg" style="width:100%;">
+        <p> Sandra Cobos Sacido </p>
+        <p> 25 años </p>
+        <a href="https://www.google.es/maps/place/28939+Arroyomolinos,+Madrid/@4
+        0.2769827,-3.9335306,14z/data=!3m1!4b1!4m5!3m4!1s0xd41929650afe925:0xc85
+        20f7b4e63956a!8m2!3d40.2783308!4d-3.9215541">Arroyomolinos</a>
+        <p> Carnet de conducir B1. Coche propio.</p>
+      </ul>
+    </nav>
+
+    <article>
+      <h1><i>Formación</i></h1>
+      <h3 class="titulo">Académica</h3>
+      <pre>
+      <b>- Grado en Ingeniería en Sistemas audiovisuales y multimedia.</b>
+          Universidad Rey Juan Carlos. (Fuenlabrada)
+          <span style="color:blue;font-weight:bold">En curso</span>
+      <b>- Formación Profesional de Grado Superior.
+          Realización de audiovisuales y espectáculos.</b>
+          IES La Arboleda (Alcorcón).
+      <b>- Bachillerato Ciencias de la Salud.</b>
+          IES Gabriela Mistral. (Arroyomolinos)</b>
+      <b>- E.S.O.</b>
+          IES Gabriela Mistral (Arroyomolinos)
+      </pre>
+      <h3 class="titulo">Otros cursos</h3>
+      <pre>
+      o Adobe Flash CS5 básico.
+      o Adobe Photoshop CS5.5 avanzado.
+      o Adobe Dreamweaver CS5.5 avanzado.
+      o Efectos especiales y grafismo de video con AFTER EFFECTS CS3.
+      o Auxiliar de óptica.
+      </pre>
+      <h3 class="titulo">Idiomas</h3>
+      <p> Ingles b2. </p>
+      <h2><i>Experiencia profesional</i></h2>
+      <table>
+        <tr>
+          <th>Empresa/Puesto</th>
+          <th>Comienzo</th>
+          <th>Fin</th>
+        </tr>
+        <tr>
+          <td>Azafata de eventos</td>
+          <td>Mayo 2014</td>
+          <td><span style="color:blue;font-weight:bold">Actualmente</span></td>
+        </tr>
+        <tr>
+          <td>Óptica</td>
+          <td>Julio 2014</td>
+          <td>Julio 2017</td>
+        </tr>
+        <tr>
+          <td>RTVE</td>
+          <td>Abril 2013</td>
+          <td>Junio 2013</td>
+        </tr>
+      </table>
+    </article>
+
+    <footer>Copyright &copy; www.urjc.es</footer>
+
+    </div>
+  </body>
+</html>

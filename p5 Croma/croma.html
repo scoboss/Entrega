@@ -1,0 +1,37 @@
+<html>
+    <head>
+     <title>PRÁCTICA 5 Croma</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+
+       #resultado {
+         background-image: url('luna.jpg');
+       }
+       /*contenedor pantallas*/
+       div {
+         float: left;
+         border :0px solid #444444;
+         padding:5px;
+         margin: 10px;
+         background:grey;
+       }
+
+     </style>
+     <script src="croma.js"></script>
+   </head>
+   <body onload="filtrado.doLoad()">
+     <p style="font-size:60px;">Control Croma</p>
+     <p style="font-size: 40px; color: blue;"> Plato 1</p>
+     <p style="font-family:courier;background-color: yellow;">Minions en la luna.</p>
+     <div>
+       <video controls id=video  width="400" height="200">
+         <source src = "miminion.mp4" type="video/mp4">
+       </video>
+     </div>
+     <div>
+       <canvas id="resultado" width="400" height="200"/>
+       <canvas id="filtro" width="400" height="200"/>
+     </div>
+   </body>
+ </html>

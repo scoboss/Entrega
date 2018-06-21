@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+       <title>PRÁCTICA 2 Puzzle Slide.</title>
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="puzzle.css">
+ </head>
+
+ <body onload="init('img1');">
+
+     <div class="mainslider">
+       <img onclick="displayID(this)" class="slide1" id="primera" src="img1.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide2" id="segunda" src="img2.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide3" id="tercera" src="img3.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide1" id="cuarta" src="img4.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide2" id="quinta" src="img5.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide3" id="sexta" src="img6.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide1" id="septima" src="img7.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide2" id="octava" src="img8.jpg" width="200px" height="140px">
+       <img onclick="displayID(this)" class="slide3" id="novena" src="img9.jpg" width="200px" height="140px">
+     </div>
+
+     <p id="title"> Puzzle <p>
+     <h1 id="title"> Elige tu imagen favorita. <h1>
+     <p id="timer"> TIME <span id="counter">0:0:0</span></p>
+
+     <div id="main" class="main">
+       <img id="imageType" src="img1.jpg" width="400px" height="300px">
+       <canvas id="puzzle" ></canvas>
+     </div>
+
+     <script src="puzzle.js"></script>
+     <div id="slider"></div>
+ </body>
+ </html>
